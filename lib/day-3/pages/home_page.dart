@@ -52,8 +52,8 @@ class _HomePageState extends State<HomePage> {
           backgroundColor: const Color.fromARGB(255, 83, 127, 184),
           bottom: TabBar(
             tabs: <Widget>[
-              Tab(icon: Icon(Icons.login)),
               Tab(icon: Icon(Icons.person)),
+              Tab(icon: Icon(Icons.login)),
               Tab(icon: Icon(Icons.logout)),
             ],
           ),
@@ -73,13 +73,47 @@ class _HomePageState extends State<HomePage> {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Container(
+                padding: EdgeInsets.all(16),
+                margin: EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  color: const Color.fromARGB(255, 169, 206, 236),
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                width: 270,
+                child: TextFormField(
+                  controller: TextEditingController(),
+                  decoration: InputDecoration(border: OutlineInputBorder(), labelText: 'Username'),
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.all(16),
+                margin: EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  color: const Color.fromARGB(255, 166, 200, 228),
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                width: 270,
+                child: TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(border: OutlineInputBorder(), labelText: 'Password'),
+                ),
+              ),
               FilledButton(
                 onPressed: () {}, 
-                child: Text('Filled Button')
+                child: Text('Login')
               ),
-              ElevatedButton(
-                onPressed: () {}, 
-                child: Text('Elevated Button')
+              Container(
+                padding: EdgeInsets.all(16),
+                margin: EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  color: const Color.fromARGB(255, 161, 195, 223),
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: ElevatedButton(
+                  onPressed: () {}, 
+                  child: Text('Login')
+                ),
               ),
             ],
           ),
