@@ -15,11 +15,11 @@ class LoginPage extends StatelessWidget {
           children: [
             TextField(
               decoration: InputDecoration(
-                labelText: 'Email',
+                labelText: 'Username',
                 border: OutlineInputBorder(),
               ),
             ),
-            SizedBox(height: 16),
+            SizedBox(height: 9),
             TextField(
               obscureText: true,
               decoration: InputDecoration(
@@ -27,7 +27,7 @@ class LoginPage extends StatelessWidget {
                 border: OutlineInputBorder(),
               ),
             ),
-            SizedBox(height: 24),
+            SizedBox(height: 18),
             ElevatedButton(
               onPressed: () {},
               child: Text('Login'),
