@@ -1,12 +1,4 @@
-// import 'package:erwan_kurnia/tugas-week-01/tugas-01.dart';
-// import 'package:erwan_kurnia/day-4/layout_page.dart';
-// import 'package:erwan_kurnia/day-4/listview_page.dart';
-// import 'package:erwan_kurnia/day-4/listview_builder_page.dart';
-// import 'package:erwan_kurnia/day-4/listview_separated_page.dart';
-// import 'package:erwan_kurnia/day-4/gridview_page.dart';
-// import 'package:erwan_kurnia/day-4/gridview_builder_page.dart';
-// import 'package:erwan_kurnia/day-4/gridview_count_page.dart';
-// import 'package:erwan_kurnia/day-4/gridview_builder_page.dart';
+import 'package:erwan_kurnia/day-4/gridview_builder_page.dart';
 import 'package:erwan_kurnia/tugas-week-01/tugas-01.dart';
 import 'package:flutter/material.dart';
 void main() {
@@ -19,15 +11,49 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: '',
+      title: 'Flutter Demo',
+      themeMode: ThemeMode.light,
       theme: ThemeData(
-        appBarTheme: const AppBarTheme(
+        scaffoldBackgroundColor: Colors.white,
+        cardTheme: CardTheme(
+          color: Colors.grey,
+          shadowColor: Colors.black,
+          elevation: 5,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(9),
+          ),
+        ),
+        appBarTheme: AppBarTheme(
           centerTitle: true,
           backgroundColor: Colors.green,
           surfaceTintColor: Colors.green,
           titleTextStyle: TextStyle(
             color: Colors.white,
-            fontSize: 45,
+            fontSize: 27,
+            fontWeight: FontWeight.bold
+          ),
+          iconTheme: IconThemeData(
+            color: Colors.white,
+          ),
+        ),
+      ),
+      darkTheme: ThemeData(
+        scaffoldBackgroundColor: Colors.black,
+        cardTheme: CardTheme(
+          color: Colors.grey,
+          shadowColor: Colors.white,
+          elevation: 5,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(9),
+          ),
+        ),
+        appBarTheme: AppBarTheme(
+          centerTitle: true,
+          backgroundColor: Colors.black,
+          surfaceTintColor: Colors.black,
+          titleTextStyle: TextStyle(
+            color: Colors.white,
+            fontSize: 27,
             fontWeight: FontWeight.bold
           ),
           iconTheme: IconThemeData(
