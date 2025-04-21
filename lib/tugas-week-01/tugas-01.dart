@@ -6,18 +6,19 @@ class LoginPage extends StatelessWidget {
     Widget build(BuildContext context) {
         return Scaffold(
             appBar: AppBar(
-              centerTitle: true,
-                backgroundColor: const Color.fromARGB(255, 83, 127, 184),
-                title: Text('Login',
+              backgroundColor: Colors.blue,
+              title: Center(child: 
+                Text('Login',
                   style: TextStyle(
-                    color: const Color.fromARGB(233, 167, 216, 19),
+                    color: Colors.green,
                     fontSize: 36,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
+              ),
             ),
             body: Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(54.0),
                 child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -46,10 +47,4 @@ class LoginPage extends StatelessWidget {
             ),
         );
     }
-}
-
-void main() {
-    runApp(MaterialApp(
-        home: LoginPage(),
-    ));
 }
