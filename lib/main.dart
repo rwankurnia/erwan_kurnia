@@ -24,11 +24,11 @@ class MyApp extends StatelessWidget {
         ),
         appBarTheme: AppBarTheme(
           centerTitle: true,
-          backgroundColor: Colors.green,
+          backgroundColor: Colors.blue,
           surfaceTintColor: Colors.green,
           titleTextStyle: TextStyle(
             color: Colors.white,
-            fontSize: 27,
+            fontSize: 36,
             fontWeight: FontWeight.bold
           ),
           iconTheme: IconThemeData(
@@ -64,4 +64,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
