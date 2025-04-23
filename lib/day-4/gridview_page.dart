@@ -8,11 +8,23 @@ class GridviewPage extends StatefulWidget {
 }
 
 class _GridviewPageState extends State<GridviewPage> {
+
+  var name = '';
+
+  @override
+  void didChangeDependencies() {
+    final args = ModalRoute.of(context)?.settings.arguments;
+    if (args != null) {
+      name = args as String;
+    }
+    super.didChangeDependencies();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('GridView Page'),
+        title: Text('GridView Page ($name)'),
       ),
       body: GridView(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(

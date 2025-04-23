@@ -23,7 +23,7 @@ class _LayoutPageState extends State<LayoutPage> {
         body: Column(
             children: [
                 Expanded(
-                    flex: 3,
+                    flex: 2,
                     child: Container(
                         color: const Color.fromARGB(255, 231, 111, 111),
                         child: const Center(
