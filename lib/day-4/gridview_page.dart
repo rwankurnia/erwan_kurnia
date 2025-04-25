@@ -85,6 +85,9 @@ class _GridviewPageState extends State<GridviewPage> {
           ),
           Center(
             child: FilledButton(
+              style: FilledButton.styleFrom(
+              backgroundColor: Colors.blue,
+            ),
               onPressed: () {},
               child: Text('Data'),
             ),

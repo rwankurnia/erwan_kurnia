@@ -11,12 +11,11 @@ final lightTheme = ThemeData(
     ),
   ),
   appBarTheme: AppBarTheme(
-    centerTitle: false,
     backgroundColor: Colors.blue,
     surfaceTintColor: Colors.blue,
     titleTextStyle: TextStyle(
       color: Colors.white,
-      fontSize: 20,
+      fontSize: 27,
       fontWeight: FontWeight.bold
     ),
     iconTheme: const IconThemeData(
@@ -26,9 +25,14 @@ final lightTheme = ThemeData(
 );
 
 final darkTheme = ThemeData(
-  scaffoldBackgroundColor: Colors.black,
+  scaffoldBackgroundColor: const Color.fromARGB(103, 70, 70, 71),
+  brightness: Brightness.dark,
+    textTheme: TextTheme(
+      bodyLarge: TextStyle(color: Colors.white), 
+      bodyMedium: TextStyle(color: Colors.white),
+    ),
   cardTheme: CardTheme(
-    color: Colors.grey,
+    color: Colors.black,
     shadowColor: Colors.white,
     elevation: 5,
     shape: RoundedRectangleBorder(
@@ -36,7 +40,6 @@ final darkTheme = ThemeData(
     ),
   ),
   appBarTheme: AppBarTheme(
-    centerTitle: false,
     backgroundColor: Colors.black,
     surfaceTintColor: Colors.black,
     titleTextStyle: TextStyle(

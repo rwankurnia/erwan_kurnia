@@ -2,6 +2,7 @@ import 'package:erwan_kurnia/day-5/main_page.dart';
 import 'package:erwan_kurnia/day-5/notification_page.dart';
 import 'package:erwan_kurnia/day-5/profile_page.dart';
 import 'package:erwan_kurnia/day-5/setting_page.dart';
+import 'package:erwan_kurnia/day-6/pages/theme_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -50,10 +51,13 @@ class _HomePageState extends State<HomePage> {
           }
         ),
         NotificationPage(),
+        ThemePage(),
       ][index],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: index,
         onTap: (value) => setState(() => index = value),
+        unselectedItemColor: Colors.grey,
+        selectedItemColor: Colors.blue,
         items: [
           BottomNavigationBarItem(
             icon: const Icon(Icons.home),
@@ -66,6 +70,10 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(
             icon: const Icon(Icons.notifications),
             label: 'Notification',
+          ),    
+          BottomNavigationBarItem(
+            icon: const Icon(Icons.color_lens),
+            label: 'Theme',
           ),    
         ]
       ),

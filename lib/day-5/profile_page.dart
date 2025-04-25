@@ -64,6 +64,9 @@ class _ProfilePageState extends State<ProfilePage> {
             ),
           ),
           FilledButton(
+            style: FilledButton.styleFrom(
+              backgroundColor: Colors.blue,
+            ),
             onPressed: save,
             child: Text('Save'),
           )

@@ -24,6 +24,9 @@ class MainPage extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           FilledButton(
+            style: FilledButton.styleFrom(
+              backgroundColor: Colors.blue,
+            ),
             onPressed: () => Navigator.pushNamed(
               context, 
               AppRoutes.gridView,
