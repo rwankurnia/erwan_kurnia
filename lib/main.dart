@@ -1,6 +1,8 @@
 import 'package:erwan_kurnia/day-4/theme/theme.dart';
 import 'package:erwan_kurnia/day-5/routes.dart';
 import 'package:erwan_kurnia/day-6/blocs/theme_cubit.dart';
+// import 'package:erwan_kurnia/tugas-week-01/LoginPage/tugas-01.dart';
+// import 'package:erwan_kurnia/tugas-week-02/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 void main() {
@@ -35,6 +37,7 @@ class MyApp extends StatelessWidget {
             ),
             routes: routes,
             initialRoute: AppRoutes.home,
+            // home: HomePage(),
           );
         }
       ),
