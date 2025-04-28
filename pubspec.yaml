@@ -36,10 +36,19 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter_bloc: ^9.1.0
   equatable: ^2.0.7
+  drift: ^2.26.0
+  sqflite: ^2.4.2
+  path: ^1.9.1
+  provider: ^6.1.4
+  path_provider: ^2.1.5
+  get_it: ^8.0.3
+  sqlite3_flutter_libs: ^0.5.32
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  drift_dev: ^2.26.0
+  build_runner: ^2.4.15
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

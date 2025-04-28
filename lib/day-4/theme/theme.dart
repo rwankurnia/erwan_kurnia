@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 final lightTheme = ThemeData(
   scaffoldBackgroundColor: Colors.white,
   cardTheme: CardTheme(
-    color: Colors.grey,
+    color: Colors.white,
     shadowColor: Colors.black,
     elevation: 5,
     shape: RoundedRectangleBorder(
