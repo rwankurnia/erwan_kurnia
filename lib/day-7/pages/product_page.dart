@@ -2,9 +2,8 @@ import 'package:drift/drift.dart';
 import 'package:erwan_kurnia/day-7/data/db/app_db.dart';
 import 'package:erwan_kurnia/day-7/data/db/product_db.dart';
 import 'package:erwan_kurnia/day-7/pages/product_form_page.dart';
-import 'package:erwan_kurnia/main.dart';
+import 'package:erwan_kurnia/injector.dart';
 import 'package:flutter/material.dart';
-import 'package:path/path.dart';
 
 class ProductPage extends StatefulWidget {
   const ProductPage({super.key});
