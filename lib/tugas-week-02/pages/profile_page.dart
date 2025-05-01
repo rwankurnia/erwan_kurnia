@@ -1,4 +1,3 @@
-import 'package:erwan_kurnia/tugas-week-02/pages/home_page.dart';
 import 'package:erwan_kurnia/tugas-week-02/pages/setting_page.dart';
 import 'package:flutter/material.dart';
 
@@ -17,18 +16,10 @@ class _ProfilePageState extends State<ProfilePage> {
         title: const Text('Profile Page'),
         actions: [
           IconButton(
-            icon: const Icon(Icons.home),
-            onPressed: () {
-              Navigator.push(context, MaterialPageRoute(
-                builder: (context) => HomePage(),
-              ));
-            },
-          ),
-          IconButton(
             icon: const Icon(Icons.settings),
             onPressed: () {
               Navigator.push(context, MaterialPageRoute(
-                builder: (context) => const SettingPage(),
+                builder: (context) => SettingPage(),
               ));
             },
           ),

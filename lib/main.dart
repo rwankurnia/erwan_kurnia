@@ -1,13 +1,13 @@
 import 'package:erwan_kurnia/day-4/theme/theme.dart';
 import 'package:erwan_kurnia/day-6/blocs/theme_cubit.dart';
 import 'package:erwan_kurnia/day-7/data/local_storage/theme_local_storage.dart';
-import 'package:erwan_kurnia/day-7/pages/product_page.dart';
 import 'package:erwan_kurnia/injector.dart';
+import 'package:erwan_kurnia/tugas-week-02/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'day-5/routes.dart';
+// import 'day-5/routes.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -45,9 +45,9 @@ class MyApp extends StatelessWidget {
               cardTheme: darkTheme.cardTheme,
               appBarTheme: darkTheme.appBarTheme,
             ),
-            routes: routes,
-            initialRoute: AppRoutes.home,
-            // home: ProductPage(),
+            // routes: routes,
+            // initialRoute: AppRoutes.home,
+            home: HomePage(),
           );
         }
       ),
