@@ -1,7 +1,7 @@
 import 'package:erwan_kurnia/day-4/theme/theme.dart';
-import 'package:erwan_kurnia/day-6/blocs/theme_cubit.dart';
-import 'package:erwan_kurnia/day-7/data/local_storage/theme_local_storage.dart';
 import 'package:erwan_kurnia/injector.dart';
+import 'package:erwan_kurnia/tugas-week-02/blocs/theme/theme_local_storage.dart';
+import 'package:erwan_kurnia/tugas-week-02/blocs/theme_cubit.dart';
 import 'package:erwan_kurnia/tugas-week-02/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

@@ -1,4 +1,4 @@
-import 'package:erwan_kurnia/day-6/blocs/theme_cubit.dart';
+import 'package:erwan_kurnia/tugas-week-02/blocs/theme_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
